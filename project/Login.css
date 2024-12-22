@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: Nosifier;
+    src: url(../assests/Fonts/Nosifer-Regular.ttf)
+}
+
+#video_container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#ferrai_video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#button_container{
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+    width: 18%;
+    height: 9.5vh;
+    animation-name: effectOnButton;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+#click_button{
+    width: 100%;
+    height: 50%;
+    border: none;
+    font-size: 3vh;
+    font-family: 'Playfair Display', serif;
+    color: red;
+    border-radius: 10px;
+}
+
+
+/* @keyframes effectOnButton{
+    0%{
+        transform:  skew(0deg) rotate(0deg);
+    }
+
+    50%{
+        transform:  skew(2deg) rotate(25deg) ;
+    }
+
+    100%{
+        transform: skew(-2deg) rotate(-25deg) ;
+    }
+} */
+
+
+#login_container{
+    width: 28%;
+    height: 48vh;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    backdrop-filter: blur(20px);
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    border-radius: 2%;
+    overflow: hidden;
+    transform: translateX(-50%);
+    z-index: 5;
+    box-shadow: 5px 5px 5px black;
+    display: none;
+    transition: all 2s;
+    animation-name: effectOnloginConatiner;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes effectOnloginConatiner{
+    from{
+        transform: translateX(100vw);
+    }
+    to{
+        transform: translateX(-15vw);
+    }
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+#heading_container{
+    width: 100%;
+    height: 15%;
+    animation-name: effectOnloginHeading;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    
+}
+
+#car_image{
+    width: 25%;
+    position: relative;
+    top: 25%;
+}
+
+#login_content{
+    display: inline;
+    position: relative;
+    left: 10%;
+    font-family: Nosifier;
+    font-size: 4vh;
+    color: transparent;
+    background-image: conic-gradient(#f90b0b,rgb(247, 219, 8));
+    background-clip: text;
+
+}
+
+
+@keyframes effectOnloginHeading{
+    from{
+        display: block;
+        transform: translateX(600px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.inputs{
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    font-size: 3vh;
+    border: none;
+    font-family: serif;
+    outline: none;
+    color: azure;
+    border-radius: 10%;
+    background-color: transparent;
+    border-bottom: 1px solid gainsboro;
+}
+
+#username{
+    top: 15vh;
+}
+
+#password{
+    top: 25vh;
+}
+
+#login_button{
+    position: relative;
+    width: 30%;
+    top: 23vh;
+    left: 50%;
+    transform: translateX(-70%);
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: bisque;
+    font-size: 3vh;
+    background-color: green;
+    box-shadow: 1px 1px 1px black;
+}
+
+
+#eye_icon{
+    position: relative;
+    left: 72%;
+    top: 13vh;
+    color: rgb(247, 245, 243);
+
+}
+
+.error_messages{
+    color: rgb(255, 0, 128);
+    font-size: 2.1vh;
+    font-family: Playfair Display, 'serif';
+    text-shadow: 2px -2px 2px black;
+    position: relative;
+    left: 6vw
+}
+
+#error_message_one{
+    top: 3.5vh;
+}
+
+#error_message_two{
+    top: 10.5vh;
+}

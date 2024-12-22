@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./Login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lobster&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./Login.js" defer></script>
+</head>
+<body>
+    <div id="login_container">
+        <div id="heading_container">
+            <img src="../assests/Images/carlogo.png" alt="" id="car_image">
+            <h1 id="login_content">Login</h1>
+        </div>
+        <div id="login_form">
+            <input type="text" id="username" class="inputs" placeholder="username" oninput="inputboxs()"><br><br>
+            <input type="password" id="password" class="inputs" placeholder="password">
+            <span id="eye_icon"><i class="fa-solid fa-eye-slash"></i></span>
+            <button id="login_button">Submit</button>
+        </div>
+        <span id="error_message_one" class="error_messages"></span><br>
+        <span id="error_message_two" class="error_messages"></span>
+    </div>
+    <div id="video_container">
+        <video src="../assests/Videos/ferrari.mp4" id="ferrai_video" autoplay muted loop></video>
+    </div>
+    <div id="button_container">
+        <button id="click_button">Click Here To Login</button>
+    </div>
+</body>
+</html>
